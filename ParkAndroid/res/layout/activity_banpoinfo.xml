@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+<TextView 
+    android:id="@+id/head"
+    android:text="공원 안내지도"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    
+    />
+    
+<LinearLayout    
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical" 
+    android:id="@+id/banpoinfomap"
+    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/infodeskBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mapicons1" />
+
+                <Button
+                    android:id="@+id/bikeparkingBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mapicons2" />
+
+                <Button
+                    android:id="@+id/bikerentalBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mapicons3" />
+
+                <Button
+                    android:id="@+id/waterBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mapicons4"
+                    />
+
+                <Button
+                    android:id="@+id/policeBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/mapicons5"
+                    />
+            </LinearLayout>
+
+</LinearLayout>

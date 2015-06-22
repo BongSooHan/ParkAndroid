@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ttukseomScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ttukseomView"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:src="@drawable/ttukseom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="버스로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@layout/table"
+                android:shrinkColumns="1" >
+
+                <TableRow
+                    android:id="@+id/ttukseomtableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="하차\n정류장명"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="버스번호"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="도보로 이용 가능한\n접근로명"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="정류장\n~ 접근로 거리"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/ttukseomtableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="자양4동\n차고지"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="2014"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="노유나들목"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="20m"
+                        android:textSize="7dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/ttukseomtableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="신자초등학교앞"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="2221, 2222, 2415, 광진05"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="자양육갑문\n(자양번영로)"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="20m"
+                        android:textSize="7dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="지하철로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 7호선 뚝섬유원지역(20m) 2,3번 출구"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 2호선 건대역(1,000m) 3번출구"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="자가용으로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 강변북로 구리시 방향으로 오실 때"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="영동대교를 지나 바로 우측의 공원진입로 이용"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 강변북로 일산방향으로 오실 때"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="청담대교를 지나 화양리 방향 표시가 있는 영동대교 북단 사거리에서 우회하여 800m 지점 사거리에서 다시 우회전하여 진입"
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/parkInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="공원안내"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/boardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="자유게시판"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

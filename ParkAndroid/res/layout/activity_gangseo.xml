@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/gangseoScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/gangseoView"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:src="@drawable/gangseo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="버스로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@layout/table"
+                android:shrinkColumns="1" >
+
+                <TableRow
+                    android:id="@+id/gangseotableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="하차\n정류장명"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="버스번호"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="도보로 이용 가능한\n접근로명"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="정류장\n~ 접근로 거리"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/gangseotableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="생태공원"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="강서07"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="정곡나들목\n(양천로27길)"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="811m"
+                        android:textSize="7dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="지하철로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 5호선 방화역(2번 출구)"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="강서07번 마을버스 탑승 → 약 5분 소요 → 생태공원 정류장하차 → 50m앞 올림픽도로 아래 정곡나들목 통과 → 강서한강공원"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="자가용으로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 잠실, 강북방면에서 오실 때"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="잠실, 강북방면에서 김포공항방향 올림픽대로 진행 → 가양대교를 지나면 4차선으로 진행 → 방화대교 100m 전방에서 오른쪽 공원진입로(내리막길)로 진입"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 김포, 부천, 공항, 행주대교방면에서 오실 때"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="김포, 부천, 공항, 행주대교방면에서 잠실방향 올림픽대로 4차선을 진행 → 방화대교 300m 전방에서 오른쪽 공원진입로 진입(내리막길) → 좌측 생태공원 육갑문(개화나들목)을 통과하여 강서생태습지공원 진입\n"
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/parkInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="공원안내"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/boardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="자유게시판"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">parkroot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_gangseo">GangseoActivity</string>
+    <string name="title_activity_yanghwa">YanghwaActivity</string>
+    <string name="title_activity_nanji">NanjiActivity</string>
+    <string name="title_activity_banpo">BanpoActivity</string>
+    <string name="title_activity_ichon">IchonActivity</string>
+    <string name="title_activity_jamsil">JamsilActivity</string>
+    <string name="title_activity_jamwon">JamwonActivity</string>
+    <string name="title_activity_kwangnaru">KwangnaruActivity</string>
+    <string name="title_activity_mangwon">MangwonActivity</string>
+    <string name="title_activity_ttukseom">TtukseomActivity</string>
+    <string name="title_activity_yeouido">YeouidoActivity</string>
+    <string name="title_another">AnotherActivity</string>
+	<string name="title_activity_banpoinfo">BanpoInfoActivity</string>
+</resources>

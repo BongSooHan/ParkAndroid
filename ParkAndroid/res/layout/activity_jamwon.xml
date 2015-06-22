@@ -1,0 +1,358 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/jamwonScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/jamwonView"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:src="@drawable/jamwon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="버스로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@layout/table"
+                android:shrinkColumns="1" >
+
+                <TableRow
+                    android:id="@+id/jamwontableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="하차\n정류장명"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="버스번호"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="도보로 이용 가능한\n접근로명"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="정류장\n~ 접근로 거리"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/jamwontableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="신사중학교"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="143, 351, 362, 440, 472, 3011, 4318, 4412, 4419, 6010"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="강남나들목\n(강남육갑문)"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="500m"
+                        android:textSize="7dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/jamwontableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="롯데캐슬아파트 앞"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="143"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="잠원나들목\n(서초 제2육갑문)"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="900m"
+                        android:textSize="7dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/jamwontableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="잠신반포18차 아파트 앞"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="351, 362, 4318"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="잠원나들목\n(서초 제2육갑문)"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="200m"
+                        android:textSize="7dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/jamwontableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="한남대교 전망카페 앞\n(강남쪽 방향에서 타실 때)"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="140, 142, 144, 241A, 241B, 402, 407, 408, 420, 421, 470, 471, 472, 3011"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="계단 및 엘리베이터"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="50m"
+                        android:textSize="7dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="지하철로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="3호선 신사역(5번 출구)\n3호선 압구정역(1번 출구)"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="자가용으로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 올림픽대로 잠실방향으로 오실때 (신잠원나들목 이용)"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="반포대교→ 한남대교에서 경부고속도로(부산) 가는 방향→고속터미널 방향으로 우회전 → 570m지점에서 우회전 → 신잠원나들목 진입\n(신반포 16차 잠원한신아파트 119동과 반포변전소 사이로 진입)"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 올림픽대로 잠실방향으로 오실때 (신사나들목 이용)"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="한남대교→ 동호대교 앞에서 압구정역 방향 진출로→ 압구정사거리에서 우회전→ 50m진행중 우측 신사 나들목으로 진입. (현대고등학교와 신사중학교 사잇길)"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 올림픽대로 공항방향으로 (신잠원나들목 이용)"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="한남대교 남단램프→경부고속도로(부산)가는 방향으로 우측차선으로 진입해서 우회전 → 터미널 방향으로 약 570m지점에서 우회전 → 신잠원나들목 진입\n(신반포 16차 잠원한신 119동과 반포변전소 사이로 진입)"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 올림픽대로 공항방향으로 (신사나들목 이용)"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="동호대교를 지나 우측차선으로 부산, 강남대로 방향으로 진입 → 고가램프따라 진행 → 한남대교 남단 밑 교차로에서 좌회전 압구정방향으로 진행 → 신사중학교 앞에서 좌회전 → 신사나들목 진입.\n(현대고등학교와 신사중학교 사잇길)\n"
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/parkInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="공원안내"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/boardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="자유게시판"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

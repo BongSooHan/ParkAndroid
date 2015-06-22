@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/banpoScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/banpoView"
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:src="@drawable/banpo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="버스로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@layout/table"
+                android:shrinkColumns="1" >
+
+                <TableRow
+                    android:id="@+id/banpotableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="하차\n정류장명"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="버스번호"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="도보로 이용 가능한\n접근로명"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="#C8D7FF"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="정류장\n~ 접근로 거리"
+                        android:textSize="6dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/banpotableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="반포한강공원. 세빛섬"
+                        android:textSize="7dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="740, 405"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="잠수교나들목\n(반포대로)"
+                        android:textSize="7dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="709m"
+                        android:textSize="7dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="지하철로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 3,7,9호선 고속터미널역 "
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="8-1, 8-2번 출구로 나와 우성아파트 방향에서 테니스장이 나올때까지 직진한 후\n 테니스장에서 우측 반포 나들목으로 공원 진입"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 9호선 신반포역 "
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="1번 출구로 나와 반포2동 주민센터 방향으로 직진하여 어린이 놀이터가 나오면 끼고 돌아\n올림픽대로 방음벽이 있는 곳에서 좌측으로 30m 지점의 반포 안내센터 나들목 이용"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 1,9호선 동작역"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="1, 2번 출구로 나와 반포천과 한강합류지점에서\n 우측인 반포대교 방향으로 거슬러 올라오면 10여분후 서래섬 도착"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="자가용으로 오실 때는"
+                android:textColor="#663300"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 올림픽대로 잠실방향으로"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="한남대교 남단램프에서 다시 김포공항 방향 올림픽대로를 진입하여 500m 지점 진입(상류주차장),\n반포대교 통과하여 150m 지점 진입(하류주차장)"
+                android:textSize="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:text="º 올림픽대로 공항방향으로"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="한남대교 지나 500m 지점 진입(상류주차장), 반포대교 통과하여 150m 지점 진입 (하류주차장)\n 네비게이션 안내 : 서초구 반포2동\n"
+                android:textSize="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/parkInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="공원안내"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/boardButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="자유게시판"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

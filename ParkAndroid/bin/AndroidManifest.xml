@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hanandroidproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    
+<uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".BanpoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".YeouidoActivity"
+            android:label="@string/title_activity_yeouido" >
+        </activity>
+        <activity
+            android:name=".MangwonActivity"
+            android:label="@string/title_activity_mangwon" >
+        </activity>
+        <activity
+            android:name=".YanghwaActivity"
+            android:label="@string/title_activity_yanghwa" >
+        </activity>
+        <activity
+            android:name=".BanpoInfoActivity"
+            android:label="@string/title_activity_banpoinfo" >
+        </activity>
+        <activity
+            android:name=".IchonActivity"
+            android:label="@string/title_activity_ichon" >
+        </activity>
+        <activity
+            android:name=".JamsilActivity"
+            android:label="@string/title_activity_jamsil" >
+        </activity>
+        <activity
+            android:name=".KwangnaruActivity"
+            android:label="@string/title_activity_kwangnaru" >
+        </activity>
+        <activity
+            android:name=".JamwonActivity"
+            android:label="@string/title_activity_jamwon" >
+        </activity>
+        <activity
+            android:name=".NanjiActivity"
+            android:label="@string/title_activity_nanji" >
+        </activity>
+        <activity
+            android:name=".TtukseomActivity"
+            android:label="@string/title_activity_ttukseom" >
+        </activity>
+        <activity
+            android:name=".AnotherActivity"
+            android:label="@string/title_another" >
+        </activity>
+        <activity
+            android:name=".GangSeoActivity"
+            android:label="@string/title_activity_gangseo" >
+        </activity>
+        
+    </application>
+
+</manifest>
