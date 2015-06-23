@@ -17,4 +17,6 @@
     <string name="title_activity_yeouido">YeouidoActivity</string>
     <string name="title_another">AnotherActivity</string>
 	<string name="title_activity_banpoinfo">BanpoInfoActivity</string>
+	<string name="hello">Hello World, NMapViewer!</string>
+    <string name="str_done">완료</string>
 </resources>
