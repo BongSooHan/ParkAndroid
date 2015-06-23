@@ -60,6 +60,7 @@ public class Facilityselect {
     public static ArrayList<FacilityDTO> getXML(String requestURL,InputStream is) {
     	ArrayList<FacilityDTO> list = new ArrayList<FacilityDTO>();
     	Log.i("xxx", "getXML start!");
+    	
     	URL text = null;
 		try {
 			text = new URL(requestURL);

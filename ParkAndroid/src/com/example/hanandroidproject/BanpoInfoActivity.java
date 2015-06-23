@@ -16,7 +16,9 @@ import android.widget.Toast;
 
 import com.example.hanandroidproject.R;
 import com.nhn.android.maps.NMapActivity;
+import com.nhn.android.maps.NMapCompassManager;
 import com.nhn.android.maps.NMapController;
+import com.nhn.android.maps.NMapItemizedOverlay;
 import com.nhn.android.maps.NMapOverlay;
 import com.nhn.android.maps.NMapOverlayItem;
 import com.nhn.android.maps.NMapView;
@@ -24,6 +26,7 @@ import com.nhn.android.maps.NMapView.OnMapStateChangeListener;
 import com.nhn.android.maps.NMapView.OnMapViewTouchEventListener;
 import com.nhn.android.maps.maplib.NGeoPoint;
 import com.nhn.android.maps.nmapmodel.NMapError;
+import com.nhn.android.maps.nmapmodel.NMapPlacemark;
 import com.nhn.android.maps.overlay.NMapPOIdata;
 import com.nhn.android.maps.overlay.NMapPOIitem;
 import com.nhn.android.mapviewer.overlay.NMapCalloutOverlay;
@@ -46,7 +49,7 @@ public class BanpoInfoActivity extends NMapActivity implements
 	private NMapViewerResourceProvider mMapViewerResourceProvider;
 	private NMapOverlayManager mOverlayManager;
 	ArrayList<FacilityDTO> list;
-	BackgroundTask task;
+	BackgroundTask task,task1,task2,task3,task4;
 	String requestURL=null;
 	int a,b;
 	int size = 0;
@@ -95,7 +98,7 @@ public class BanpoInfoActivity extends NMapActivity implements
 				c = "안내소";
 				task = new BackgroundTask();
 				task.execute();
-				onMapInitHandler(mMapView, mMapError);
+				
 			}
 		});
 
@@ -106,8 +109,8 @@ public class BanpoInfoActivity extends NMapActivity implements
 				a = 6;
 				b = 2;
 				c = "자전거 보관소";
-				task = new BackgroundTask();
-				task.execute();
+				task1 = new BackgroundTask();
+				task1.execute();
 				onMapInitHandler(mMapView, mMapError);
 			}
 		});
@@ -119,8 +122,8 @@ public class BanpoInfoActivity extends NMapActivity implements
 				a = 6;
 				b = 3;
 				c = "자전거 대여소";
-				task = new BackgroundTask();
-				task.execute();
+				task2 = new BackgroundTask();
+				task2.execute();
 				onMapInitHandler(mMapView, mMapError);
 			}
 		});
@@ -132,8 +135,8 @@ public class BanpoInfoActivity extends NMapActivity implements
 				a = 6;
 				b = 4;
 				c = "식수대";
-				task = new BackgroundTask();
-				task.execute();
+				task3 = new BackgroundTask();
+				task3.execute();
 				onMapInitHandler(mMapView, mMapError);
 			}
 		});
@@ -145,8 +148,8 @@ public class BanpoInfoActivity extends NMapActivity implements
 				a = 5;
 				b = 5;
 				c = "경찰서";
-				task = new BackgroundTask();
-				task.execute();
+				task4 = new BackgroundTask();
+				task4.execute();
 				onMapInitHandler(mMapView, mMapError);
 			}
 		});
@@ -164,9 +167,14 @@ public class BanpoInfoActivity extends NMapActivity implements
 			Log.d("eee","index 0 :::"+list.get(0));
 			Log.d("eee", "sdf:::"+list.size());
 			size = list.size();
-			onMapInitHandler(mMapView, mMapError);
 			return list;
 		}
+		
+		 protected void onPostExecute(ArrayList<FacilityDTO> result) {
+		       super.onPreExecute(); 
+		       
+		       onMapInitHandler(mMapView, mMapError);
+		 }
 		//protected void onPostExecute(ArrayList<FacilityDTO> list){	}
 		
 	}
@@ -177,6 +185,7 @@ public class BanpoInfoActivity extends NMapActivity implements
 			// Markers for POI item
 			int markerId = NMapPOIflagType.PIN;
 			NMapPOIdata poiData = null;
+			mapView.clearAnimation();
 			// set POI data
 			if (size==0) {
 				Log.d("list","nulllll");
@@ -189,11 +198,11 @@ public class BanpoInfoActivity extends NMapActivity implements
 
 			if (size!=0) {
 				Log.d("list","not nulllll");
-				
+				mOverlayManager.clearOverlays();
 				poiData = new NMapPOIdata(list.size(),mMapViewerResourceProvider);
 				poiData.beginPOIdata(list.size());
 				for (int i = 0; i < list.size(); i++) {
-					poiData.addPOIitem(list.get(i).getLon(), list.get(i).getLat(), c, markerId, 0);
+					poiData.addPOIitem(list.get(i).getLon(), list.get(i).getLat(), c+i, markerId, 0);
 				}
 				poiData.endPOIdata();
 			}
