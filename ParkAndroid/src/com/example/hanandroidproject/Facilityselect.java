@@ -37,7 +37,7 @@ public class Facilityselect {
             dataList.add(new BasicNameValuePair("p_number",""+p_number));
             dataList.add(new BasicNameValuePair("f_number",""+f_number));
 
-            requestURL=requestURL+"?"+"?"+URLEncodedUtils.format(dataList, "UTF-8");
+            requestURL=requestURL+"?"+URLEncodedUtils.format(dataList, "UTF-8");
            
             HttpGet get = new HttpGet(requestURL);
              
@@ -71,7 +71,7 @@ public class Facilityselect {
     		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
     		XmlPullParser parser = factory.newPullParser();
 			
-			parser.setInput(text.openStream(), "UTF-8");
+			parser.setInput(text.openStream(),"UTF-8");
 			
 			int eventType = parser.getEventType();
 			
@@ -82,7 +82,8 @@ public class Facilityselect {
 				
 				case XmlPullParser.START_TAG:
 					String startTag = parser.getName();
-					if(startTag.equals("record")){ dto = new FacilityDTO(); }
+					Log.d("123","12312412341");
+					if(startTag.equals("record")){Log.d("123","ddddddddddddd");	dto = new FacilityDTO(); }
 					
 					if(dto != null ) {
 						if(startTag.equals("p_number")){ dto.setP_number(Integer.parseInt(parser.nextText())); }
