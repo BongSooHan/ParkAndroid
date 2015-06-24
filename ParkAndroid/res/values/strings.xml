@@ -17,6 +17,16 @@
     <string name="title_activity_yeouido">YeouidoActivity</string>
     <string name="title_another">AnotherActivity</string>
 	<string name="title_activity_banpoinfo">BanpoInfoActivity</string>
+	<string name="title_activity_gangseoinfo">GangseoInfoActivity</string>
+	<string name="title_activity_ichoninfo">IchonInfoActivity</string>
+	<string name="title_activity_jamsilinfo">JamsilInfoActivity</string>
+	<string name="title_activity_jamwoninfo">JamwonInfoActivity</string>
+	<string name="title_activity_kwangnaruinfo">KwangnaruInfoActivity</string>
+	<string name="title_activity_mangwoninfo">MangwonInfoActivity</string>
+	<string name="title_activity_nanjiinfo">NanjiInfoActivity</string>
+	<string name="title_activity_yanghwainfo">YanghwaInfoActivity</string>
+	<string name="title_activity_yeouidoinfo">YeouidoInfoActivity</string>
+	<string name="title_activity_ttukseominfo">TtukseomInfoActivity</string>
 	<string name="hello">Hello World, NMapViewer!</string>
     <string name="str_done">완료</string>
 </resources>

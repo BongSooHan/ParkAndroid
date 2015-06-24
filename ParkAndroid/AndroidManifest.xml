@@ -72,6 +72,18 @@
             android:name=".GangSeoActivity"
             android:label="@string/title_activity_gangseo" >
         </activity>
+        <activity
+            android:name=".GangseoInfoActivity"
+            android:label="@string/title_activity_gangseoinfo" >
+        </activity>
+        <activity
+            android:name=".IchonInfoActivity"
+            android:label="@string/title_activity_ichoninfo" >
+        </activity>
+        <activity
+            android:name=".JamsilInfoActivity"
+            android:label="@string/title_activity_jamsilinfo" >
+        </activity>
         
     </application>
 

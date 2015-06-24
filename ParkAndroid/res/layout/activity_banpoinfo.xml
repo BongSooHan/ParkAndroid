@@ -6,13 +6,13 @@
     android:orientation="vertical"
      >
 
-<TextView 
-    android:id="@+id/head"
-    android:text="공원 안내지도"
-    android:layout_width="100dp"
-    android:layout_height="40dp"
-    
-    />
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="공원 안내지도" 
+        android:paddingTop="20dp"
+        />
     
 <LinearLayout    
     android:layout_gravity="center_vertical|center_horizontal"
@@ -29,32 +29,32 @@
 
                 <Button
                     android:id="@+id/infodeskBtn"
-                    android:layout_width="70dp"
+                    android:layout_width="72dp"
                     android:layout_height="50dp"
                     android:background="@drawable/mapicons1" />
 
                 <Button
                     android:id="@+id/bikeparkingBtn"
-                    android:layout_width="70dp"
+                    android:layout_width="72dp"
                     android:layout_height="50dp"
                     android:background="@drawable/mapicons2" />
 
                 <Button
                     android:id="@+id/bikerentalBtn"
-                    android:layout_width="70dp"
+                    android:layout_width="72dp"
                     android:layout_height="50dp"
                     android:background="@drawable/mapicons3" />
 
                 <Button
                     android:id="@+id/waterBtn"
-                    android:layout_width="70dp"
+                    android:layout_width="72dp"
                     android:layout_height="50dp"
                     android:background="@drawable/mapicons4"
                     />
 
                 <Button
                     android:id="@+id/policeBtn"
-                    android:layout_width="70dp"
+                    android:layout_width="72dp"
                     android:layout_height="50dp"
                     android:background="@drawable/mapicons5"
                     />

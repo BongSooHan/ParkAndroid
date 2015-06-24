@@ -17,7 +17,7 @@ import android.widget.ImageView.ScaleType;
 public class GangseoActivity extends Activity {
 	ImageView m_imageView;
 	PhotoViewAttacher mAttacher;
-	public static final int REQUEST_CODE_ANOTHER =9;
+	public static final int REQUEST_CODE_ANOTHER =1;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
